@@ -85,7 +85,7 @@ Báo cáo cuối + trích dẫn
 **Cách hoạt động:**
 
 1. User gửi tin nhắn.
-2. Hệ thống **embed** tin nhắn bằng `nomic-embed-text` (768 chiều).
+2. Hệ thống **embed** tin nhắn bằng `nomic-embed-text` (768 dims).
 3. Truy vấn **top-K memory gần nhất** (cosine similarity) trong bảng `memories` qua **pgvector HNSW index**.
 4. Inject các memory liên quan vào system prompt của LLM.
 5. LLM trả lời.
